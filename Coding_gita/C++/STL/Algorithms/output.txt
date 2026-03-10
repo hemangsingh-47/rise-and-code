@@ -1,0 +1,5 @@
+Sorted and Reversed Vector:
+36
+9
+6
+1
