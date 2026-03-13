@@ -1,0 +1,11 @@
+//Q3. Write a program using a for loop to print odd numbers from 1 to 19.
+#include<stdio.h>
+int main(){
+
+for( int a = 1; a <= 19; a += 2){
+    printf("%d\n",a);
+}
+
+return 0;
+
+}
