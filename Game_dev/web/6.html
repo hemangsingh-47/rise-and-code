@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-6</title>
+</head>
+<body>
+ <input id="itemInput" type="text" placeholder="add item here">
+ <button id="addList">Add to list</button>
+ <button id="removeList">Remove</button>
+
+ <ul id="todolist"></ul>
+    <script>
+const itemInput=document.getElementById("itemInput");
+const addList=document.getElementById("addList");
+const remove=document.getElementById("removeList");
+
+remove.addEventListener("click",clearList);
+
+function clearList(){
+     var tasknumber = prompt("Choose a number");
+     const items = document.querySelectorAll('#todolist li')
+        items[tasknumber-1].remove();
+
+}
+ addList.addEventListener("click",()=>{
+
+
+    const text=itemInput.value;
+
+    if(text === ""){
+        return;
+    }
+      const li = document.createElement("li");
+    li.textContent = text;
+    todolist.appendChild(li);
+    itemInput.value = "";
+
+ })
+    </script>
+</body>
+</html>
+

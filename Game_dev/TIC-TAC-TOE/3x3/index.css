@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid white; */
+}
+
+body{
+    text-align: center;
+    background-color:black;
+    font-family:Bitcount Prop Single Ink ;
+}
+
+.container{
+    height: 70vh;
+    /* width: 70vh; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game{
+    height: 60vh;
+    width: 60vh;
+   
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   gap: 1vmin;
+   background-color:whitesmoke ;
+    
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+   background-color: black;
+   font-size: 50px;
+    font-family:Bitcount Prop Single Ink ;
+   border: 2px solid black;
+   font-weight: bold;
+}
+
+box:disabled{
+  opacity: 1;
+}
+.restart {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #861a1a;         
+  transform: scale(.7s);      
+}
+p{
+  font-size: 80px;
+}

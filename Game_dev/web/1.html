@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello friends! this side hemang.</p>
+    <button>change text</button>
+    <script>
+
+const p = document.querySelector('p');
+const button = document.querySelector('button');
+let jal=false;
+
+
+function change(){
+if(!jal){
+    p.textContent='jal ka jal jala';
+    jal=true;
+}
+else{
+      p.textContent='hello friends! this side hemang.';
+      jal=false;
+}
+}
+button.addEventListener('click',change);
+
+    </script>
+
+
+</body>
+</html>

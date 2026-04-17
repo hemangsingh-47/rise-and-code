@@ -1,0 +1,50 @@
+
+   *{ margin: 0;
+    padding: 0;}
+
+body{
+    background-color:black;
+    text-align: center;
+    color: blueviolet;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border: 2px solid white;
+}
+.game{
+    margin-top: 100px ;
+    height: 700px;
+    width: 700px;
+}
+.btn{
+    font-size: 20px;
+  
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    color: black;
+    background-color:rgb(25, 149, 139);
+}
+.btn:hover{
+    background-color: blanchedalmond;
+    transition: .2s ease-in-out;
+}
+.resetbtn{
+    position: absolute;
+    bottom: -20px;
+    height: 40px;
+    width: 60px;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.resetbtn:hover{
+    background-color:red;
+    transition: .3s ease;
+    height: 40px;
+    width: 70px;
+}

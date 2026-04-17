@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX - 8</title>
+</head>
+<body>
+
+<button id="red">RED</button>
+<button id="green">GREEN</button>
+<button id="blue">BLUE</button>
+    <script>
+        const body = document.querySelector('body');
+        const red = document.querySelector('#red');
+        const green= document.querySelector('#green');
+        const blue = document.querySelector('#blue');
+
+
+        red.addEventListener("click",() =>{
+            body.style.backgroundColor = "red";
+        })
+green.addEventListener("click",() =>{
+            body.style.backgroundColor = "green";
+        })
+         blue.addEventListener("click",() =>{
+            body.style.backgroundColor = "blue";
+        })
+
+    </script>
+</body>
+</html>

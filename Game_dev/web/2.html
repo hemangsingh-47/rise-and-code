@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello friends! this side hemang.</p>
+    <button>change text</button>
+    <script>
+
+const p = document.querySelector('p');
+const button = document.querySelector('button');
+
+
+function change(){
+p.style.color='red';
+p.style.backgroundColor='green';
+p.style.fontSize='30px'
+p.textContent = "bhai ka birthday he aaj";
+
+}
+button.addEventListener('click',change);
+
+    </script>
+
+
+</body>
+</html>

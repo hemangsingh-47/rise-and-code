@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:70vh;
+            width:80vw;
+            border: 2px solid black;
+        }
+        button{
+            height: 5vh;
+
+            width:5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+cursor: pointer;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+
+            margin:20vh;
+        }
+        .container img{
+            object-fit: contain;
+            height:60vh;
+            width:80vw;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+<img src="https://res.cloudinary.com/ddmt5vrxi/image/upload/v1761317758/Screenshot_2025-10-24_202548_gjulj7.png" alt="">
+    </div>
+    <button type="button" class="btn" id="nextBtn">NEXT</button>
+    <script>
+const button = document.querySelector('#nextBtn');
+const img = document.querySelector('img');
+
+const arr =[
+    "https://res.cloudinary.com/ddmt5vrxi/image/upload/v1761317738/Screenshot_2025-10-24_202523_ibktma.png",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNubLmqdOK9pZWU-2IiD20cuSIdUUDi9-NvQ&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JFyVMUGB2hCmAhFXOdCydqzgsCHd2BAzEA&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s"
+];
+var index = 0;
+function newImage(){
+    if(index>1){
+        index = 0;
+    }
+    img.setAttribute('src',arr[index]);
+    index++;
+}
+
+button.addEventListener('click',newImage);
+    </script>
+</body>
+</html>

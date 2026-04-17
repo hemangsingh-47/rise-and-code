@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 20px;
+    
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    align-items: center;
+    width: 600px;
+    height: 1100px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 80px red;
+    
+
+}
+.win-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+
+}
+.big{
+    height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.container h1{
+    color: rgb(95, 95, 234);
+    margin-top: 20px;
+}
+
+.subtitle{
+    opacity: 0.4;
+    
+}
+
+.score-section{
+    display: flex;
+    justify-content: center;
+}
+
+.score-box{
+    width: 220px;
+    height: 140px;
+    border-radius: 10px;
+   background:rgb(42, 31, 31);
+    box-shadow: 2px 2px 10px rgb(214, 8, 8);
+    color: rgb(254, 252, 252);
+}
+.score{
+    font-size: 30px;
+}
+
+.timer{
+    font-size: 60px;
+    color: rgb(46, 146, 176);
+}
+
+.button-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.click-btn {
+    width: 460px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(55, 93, 168);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.start-btn{
+    width: 560px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right,cornflowerblue, rgb(238, 98, 238));
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+     width: 460px;
+    height: 70px;
+}
+.reset-btn{
+    width: 460px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(250, 97, 97);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+     width: 460px;
+    height: 70px;
+}
+
+.pause-btn{
+    width: 460px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(98, 226, 137);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+     width: 460px;
+    height: 70px;
+}
+
+.resume-btn{
+    width: 460px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(250, 97, 97);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+     width: 460px;
+    height: 70px;
+    display: none;
+}
+.click-btn:hover{
+    letter-spacing: 4px;
+    background-color: rgb(32, 50, 86);
+    transition: .3s ease ;
+    transform:scale(1.1);
+}
+.start-btn:hover{
+    letter-spacing: 4px;
+    background: linear-gradient(to bottom right,rgb(61, 99, 170), rgb(147, 86, 212));
+    transition: .3s ease ;
+    transform:scale(1.1);
+}
+
+.pause-btn:hover{
+    letter-spacing: 4px;
+    background-color: rgb(46, 231, 139);
+    transition: .3s ease ;
+    transform:scale(1.1);
+}
+.reset-btn:hover{
+    letter-spacing: 4px;
+    background-color: rgb(160, 54, 54);
+    transition: .3s ease ;
+    transform:scale(1.1);
+}
+
+.resume-btn:hover{
+    letter-spacing: 4px;
+    background-color: rgb(160, 54, 54);
+    transition: .3s ease ;
+    transform:scale(1.1);
+}
+.status-message{
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .score-box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .button-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .click-btn, .start-btn, .reset-btn ,.pause-btn , .resume-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .timer {
+    font-size: 40px;
+  }
+  .score {
+    font-size: 24px;
+  }
+  .status-message {
+    font-size: 18px;
+  }
+  
+}

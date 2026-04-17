@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>IN</h1>
+    </div>
+ 
+    <h2 class="h2">OUT</h2>
+
+    <script>
+        var p = document.createElement('p');
+        p.textContent = "hi sirrrrr";
+
+        var h2 = document.querySelector('.h2');
+
+        document.body.insertBefore(p, h2);
+    </script>
+</body>
+</html>
